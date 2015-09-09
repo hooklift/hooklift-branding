@@ -5,22 +5,17 @@
   src: url(../assets/webfont/Polaris_V2_Medium.otf);
 }
 
-#hero,
-.logo {
-  background-color: #04b6e2;
-}
+/* NAVBAR */
 
+/* top-bar */
 .top-bar {
-  height: 5.8em;
-  background-color: #04b6e2;
+  height: 60px;
+  line-height: 60px;
+  background: #04b6e2;
 }
 
-.top-bar .toggle-topbar.menu-icon {
-  margin-top: 3em;
-}
-
-.zurb-logo {
-  height: 5.8em;
+.top-bar.expanded {
+  background: #04b6e2;
 }
 
 .top-bar-section ul,
@@ -28,14 +23,14 @@
   background: #04b6e2 !important;
 }
 
-.top-bar-section ul a {
+.top-bar-section ul li > a {
+  padding-left: 27px;
   opacity: 0.9;
 }
 
-.top-bar-section ul a:hover {
+.top-bar-section ul li > a:hover {
   opacity: 1;
 }
-
 
 .top-bar.expanded .toggle-topbar a {
   color: white;
@@ -45,46 +40,57 @@
   box-shadow: 0 10px 0 1px rgba(255,255,255,0.9), 0 16px 0 1px rgba(255,255,255,0.9), 0 22px 0 1px rgba(255,255,255,0.9);
 }
 
+.top-bar .toggle-topbar.menu-icon {
+  margin-top: 20px;
+}
+
+/* logo */
+
+.logo {
+  float: left;
+  margin-top: -2px;
+}
+
+.logo a {
+  background-image: url(../assets/images/logo.svg);
+  background-size: 122px 60px;
+  width: 122px;
+  height: 60px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 28.75em) {
 
 }
 
 @media screen and (min-width: 40.063em) {
-  .top-bar-section ul a {
-    font-size: 0.705em !important;
-    padding: 3.45em 1.25em 0 1.25em !important;
-    cursor: pointer;
-  }
 
-  .logo {
-    top: -2px;
-    position: absolute;
+  /* NAVBAR */
+
+  /* top-bar */
+  .top-bar-section ul li > a {
+    font-size: 0.705em;
+    padding: 1.35em 1.25em 0 1.25em !important;
+    cursor: pointer;
+    font-family: PolarisMedium;
   }
 }
 
 @media screen and (min-width: 64.063em) {
 
-  .top-bar-section ul li > a {
-    font-family: PolarisMedium;
-  }
+  /* NAVBAR */
+
+  /* top-bar */
 
   .top-bar-section ul,
   .top-bar-section ul a {
     background: transparent !important;
   }
 
-  .top-bar-section ul a {
-    font-size: 0.805em !important;
-    padding: 3.05em 1.25em 0 1.25em !important;
-  }
-
   .top-bar .name a {
     margin-right: 2.4em;
     margin-left: 9.8em;
-  }
-
-  .top-bar .zurb-logo {
-    /*height: 6em;*/
   }
 
   .top-bar {
