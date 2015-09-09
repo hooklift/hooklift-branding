@@ -5,6 +5,16 @@
   src: url(../assets/webfont/Polaris_V2_Medium.otf);
 }
 
+@font-face {
+  font-family: PolarisLight;
+  src: url(../assets/webfont/Polaris_V2_Light.otf);
+}
+
+@font-face {
+  font-family: PolarisBook;
+  src: url(../assets/webfont/Polaris_V2_Book.otf);
+}
+
 /* NAVBAR */
 
 /* top-bar */
@@ -44,8 +54,11 @@
   margin-top: 20px;
 }
 
-/* logo */
+.top-bar .toggle-topbar.menu-icon a {
+  width: 18px;
+}
 
+/* logo */
 .logo {
   float: left;
   margin-top: -2px;
@@ -58,6 +71,52 @@
   height: 60px;
   display: block;
   background-repeat: no-repeat;
+}
+
+/* HERO */
+#hero {
+  background: #04b6e2;
+  padding-top: 1em;
+  padding-bottom: 2.5em;
+}
+
+#hero .text {
+  text-align: center;
+}
+
+#hero .text h1 {
+  color: #fff;
+  font-family: PolarisLight;
+  /*font-size: 2.0125em;*/
+  font-size: 25px;
+  font-size: 1.6125rem;
+}
+
+/* PAGE CONTENT */
+#page-content {
+  padding: 1em 0 2.5em 0.75em;
+}
+
+#page-content .text h2,
+#page-content .text p {
+  font-family: PolarisBook;
+}
+
+#page-content .text h2 {
+  font-size: 19px;
+  font-size: 1.2125rem;
+}
+
+#page-content .small-8.text {
+  float: left;
+}
+
+#page-content .text p {
+  font-size: 9px;
+  font-size: 0.6rem;
+  line-height: 20px;
+  line-height: 1.3rem;
+  color: #828282;
 }
 
 @media screen and (min-width: 28.75em) {
@@ -75,6 +134,11 @@
     cursor: pointer;
     font-family: PolarisMedium;
   }
+
+  /* HERO */
+  #hero .text h1 {
+    font-size: 2.0125rem;
+  }
 }
 
 @media screen and (min-width: 64.063em) {
@@ -82,7 +146,6 @@
   /* NAVBAR */
 
   /* top-bar */
-
   .top-bar-section ul,
   .top-bar-section ul a {
     background: transparent !important;
