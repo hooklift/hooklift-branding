@@ -133,6 +133,10 @@
   margin-bottom: 1.5rem;
 }
 
+#page-content .centered-text p {
+  text-align: justify;
+}
+
 @media screen and (min-width: 28.75em) {
 
 }
