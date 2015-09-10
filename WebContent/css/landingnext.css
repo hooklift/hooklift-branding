@@ -85,14 +85,13 @@
   padding-bottom: 2.5em;
 }
 
-#hero .text {
+#hero .main-text {
   text-align: center;
 }
 
-#hero .text h1 {
+#hero .main-text h1 {
   color: #fff;
   font-family: PolarisLight;
-  /*font-size: 2.0125em;*/
   font-size: 1.6125rem;
 }
 
@@ -101,23 +100,37 @@
   padding: 1em 0 2.5em 0.75em;
 }
 
-#page-content .text h2,
-#page-content .text p {
+#page-content .feature-text h2,
+#page-content .feature-text p,
+#page-content .centered-text p {
   font-family: PolarisBook;
 }
 
-#page-content .text h2 {
+#page-content .feature-text h2 {
   font-size: 1.2125rem;
 }
 
-#page-content .small-8.text {
+#page-content .small-8.feature-text {
   float: left;
 }
 
-#page-content .text p {
+#page-content .feature-text p,
+#page-content .centered-text p {
   font-size: 0.6rem;
   line-height: 1.3rem;
   color: #828282;
+}
+
+#page-content .medium-4.columns {
+  text-align: center;
+}
+
+#page-content .centered-text {
+  text-align: center;
+}
+
+#page-content .centered-text img {
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 28.75em) {
@@ -137,8 +150,13 @@
   }
 
   /* HERO */
-  #hero .text h1 {
+  #hero .main-text h1 {
     font-size: 2.0125rem;
+  }
+
+  /* PAGE CONTENT */
+  #page-content .feature-image img {
+    padding: 2em;
   }
 }
 
