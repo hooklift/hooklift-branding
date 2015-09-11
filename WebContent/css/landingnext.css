@@ -1,6 +1,6 @@
 /* custom properties */
 :root {
-  --body-background-color: #04b6e2;
+  --hookliftBlue: #04b6e2;
   --topBar-height: 60px;
   --opacityLinksColor: rgba(255,255,255,0.9);
 }
@@ -26,16 +26,16 @@
 .top-bar {
   height: var(--topBar-height);
   line-height: var(--topBar-height);
-  background: var(--body-background-color);
+  background: var(--hookliftBlue);
 }
 
 .top-bar.expanded {
-  background: var(--body-background-color);
+  background: var(--hookliftBlue);
 }
 
 .top-bar-section ul,
 .top-bar-section ul a {
-  background: var(--body-background-color) !important;
+  background: var(--hookliftBlue) !important;
 }
 
 .top-bar-section ul li > a {
@@ -80,9 +80,9 @@
 
 /* HERO */
 #hero {
-  background: var(--body-background-color);
+  background: var(--hookliftBlue);
   padding-top: 1em;
-  padding-bottom: 2.5em;
+  padding-bottom: 1em;
 }
 
 #hero .main-text {
@@ -97,7 +97,7 @@
 
 /* PAGE CONTENT */
 #page-content {
-  padding: 1em 0 2.5em 0.75em;
+  padding: 1em 0.75em 1em 0.75em;
 }
 
 #page-content .feature-text h2,
@@ -108,6 +108,8 @@
 
 #page-content .feature-text h2 {
   font-size: 1.2125rem;
+  text-align: center;
+  margin-top: 0;
 }
 
 #page-content .small-8.feature-text {
@@ -119,22 +121,49 @@
   font-size: 0.6rem;
   line-height: 1.3rem;
   color: #828282;
+  width: 80%;
+  margin-left: 10%;
 }
 
-#page-content .medium-4.columns {
-  text-align: center;
-}
-
+#page-content .feature-image,
+#page-content .supporticons,
 #page-content .centered-text {
   text-align: center;
 }
 
-#page-content .centered-text img {
+#page-content img {
   margin-bottom: 1.5rem;
 }
 
 #page-content .centered-text p {
   text-align: justify;
+}
+
+#page-content .request-button {
+  background: var(--hookliftBlue);
+  font-family: PolarisLight;
+}
+
+/* FOOTER */
+footer {
+  background: var(--hookliftBlue);
+  padding: 24px 0 10px;
+  height: var(--topBar-height);
+  line-height: var(--topBar-height);
+}
+
+footer .footer-logo {
+  float: right;
+  margin-top: -25px;
+}
+
+footer .footer-logo a {
+  background-image: url(../assets/images/logo.svg);
+  background-size: 122px var(--topBar-height);
+  width: 122px;
+  height: var(--topBar-height);
+  display: block;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 28.75em) {
@@ -159,8 +188,18 @@
   }
 
   /* PAGE CONTENT */
-  #page-content .feature-image img {
-    padding: 2em;
+  #page-content .feature-text h2 {
+    text-align: justify;
+  }
+
+  #page-content .feature-text p,
+  #page-content .centered-text p {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #page-content .request-button {
+    width: 14.5em;
   }
 }
 
